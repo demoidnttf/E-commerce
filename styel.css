@@ -1,0 +1,218 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: lightblue;
+}
+
+/* list */
+.list {
+    background-color: rgb(0, 100, 0);
+    text-align: center;
+}
+
+.ulist {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    padding: auto;
+}
+
+.ulist li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.ulist li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.ulist li:hover {
+    background-color: #2bab0d;
+    border-radius: 5px;
+}
+
+.ulist .fa {
+    margin-right: 8px;
+}
+
+.sub-menu-l {
+    display: none;
+}
+
+/* second li */
+.ulist li:hover .sub-menu-l {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.ulist li:hover .sub-menu-l ul {
+    position: absolute;
+    display: block;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    left: -18px;
+    box-shadow: 5px 5px rgb(0, 100, 0);
+}
+
+.ulist li:hover .sub-menu-l ul li {
+    font-weight: bold;
+    width: 80px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.ulist li:hover .sub-menu-l ul li a:hover {
+    background-color: #2bab0d;
+    padding-block: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* h2 & h3 style :start */
+.heading h2 {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+
+.heading h3 {
+    position: absolute;
+    top: 80%;
+    margin-left: 450px;
+}
+
+/* sub-about start */
+.sub-about {
+    display: none;
+}
+
+.ulist li:hover .sub-about {
+    background-color: rgba(0, 0, 0, 0.514);
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.ulist li:hover .sub-about ul {
+    position: absolute;
+    display: block;
+    margin: 3px;
+    background-color: rgba(0, 0, 0, 0.514);
+    left: -18px;
+    box-shadow: 5px 5px rgb(0, 100, 0);
+}
+
+.ulist li:hover .sub-about ul li {
+    font-weight: bold;
+    width: 80px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+.ulist li:hover .sub-about ul li a:hover {
+    background-color: #2bab0d;
+    padding-block: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* sub-feature start */
+.sub-feature {
+    display: none;
+}
+
+.ulist li:hover .sub-feature {
+    background-color: rgba(0, 0, 0, 0.514);
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.ulist li:hover .sub-feature ul {
+    position: absolute;
+    display: block;
+    margin: 3px;
+    background-color: rgba(0, 0, 0, 0.514);
+    left: -18px;
+    box-shadow: 5px 5px rgb(0, 100, 0);
+}
+
+.ulist li:hover .sub-feature ul li {
+    font-weight: bold;
+    width: 80px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+.ulist li:hover .sub-feature ul li a:hover {
+    background-color: #2bab0d;
+    padding-block: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .ulist {
+        display: block;
+    }
+
+    .ulist li {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .ulist li:hover .sub-menu-l ul {
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .ulist li:hover .sub-about ul,
+    .ulist li:hover .sub-feature ul {
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .heading h2,
+    .heading h3 {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ulist li {
+        padding: 8px;
+    }
+
+    .heading h2 {
+        font-size: 1.5em;
+    }
+
+    .heading h3 {
+        font-size: 1.2em;
+    }
+}
